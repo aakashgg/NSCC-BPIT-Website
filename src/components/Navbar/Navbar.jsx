@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import {Squash as Hamburger} from 'hamburger-react'
+import { Squash as Hamburger } from 'hamburger-react'
 const NavbarContainer = styled.nav`
   width: 100%;
   height: fit-content;
@@ -48,7 +48,7 @@ const NavLinks = styled.div`
 
 const NavbarLink = styled(Link)`
   color: white;
-  font-size: 1rem;
+  font-size: 20rem;
   font-weight: 600;
   text-decoration: none;
   transition: 200ms ease-in-out;
@@ -230,7 +230,7 @@ function Navbar() {
               target="_blank"
               className={
                 activeNavLink ===
-                "https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
+                  "https://github.com/NSCC-BPIT/NSCC-BPIT-Website"
                   ? "active"
                   : ""
               }
@@ -239,8 +239,8 @@ function Navbar() {
                 Contribute
                 {activeNavLink ===
                   "https://github.com/NSCC-BPIT/NSCC-BPIT-Website" && (
-                  <hr className="border-3 rounded-full" />
-                )}
+                    <hr className="border-3 rounded-full" />
+                  )}
               </div>
             </NavbarLink>
           </NavLinks>
